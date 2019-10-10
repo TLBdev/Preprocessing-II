@@ -1,1 +1,43 @@
 // Navigation Styles here
+.navDiv{
+    max-width: 800px;
+    .flexOuterJAD(space-between, center, row);
+    @media @mobile{
+        flex-direction: column;
+
+    }
+    margin: 3% 0;
+    h2{
+        .flexInnerW(49%);
+        
+        font-size: 3rem;
+        flex-wrap: nowrap;
+        @media @mobile{
+        text-align: center;
+        width: 100%
+        
+    }
+    }
+    nav{
+        .flexOuterJAD(space-around, center, row);
+        
+        .flexInnerW(49%); 
+        @media @mobile{
+            width: 100%;
+            
+        }
+        a{
+            
+            .flexInnerW(20%);
+            text-decoration: none;
+            color: black;
+            font-size: 1.5rem;
+            text-align: center;
+            @media @mobile{
+                flex-direction: column;
+                
+            }
+
+        } 
+    }
+}
